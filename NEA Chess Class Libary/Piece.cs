@@ -12,27 +12,27 @@ namespace NEA_Chess_Class_Libary
         private bool isCaptured;
         private bool isPinned;
 
-        public void Move()
+        public virtual void Move()
         {
 
         }
-        public void Remove()
+        public virtual void Remove()
         {
 
         }
-        public void VaildMoves()
+        public virtual void VaildMoves()
         {
 
         }
-        public bool CanBeCaptured()
+        public virtual bool CanBeCaptured()
         {
 
         }
-        public bool CheckForCheck()
+        public virtual bool CheckForCheck()
         {
 
         }
-        public bool IsPinned()
+        public virtual bool IsPinned()
         {
 
         }
