@@ -37,4 +37,40 @@ namespace NEA_Chess_Class_Libary
 
         }
     }
+
+    public class King : Piece
+    {
+        private bool hasMoved;
+
+        public void Castle()
+        {
+
+        }
+        public bool CheckCastleIsValid()
+        {
+
+        }
+    }
+    public class Rook : Piece
+    {
+        private bool hasMoved;
+        
+    }
+    public class Pawn : Piece
+    {
+        private Square skippedSquare;
+
+        public bool CheckForEnPassent()
+        {
+
+        }
+        public bool CheckForPromotion()
+        {
+
+        }
+        public void Promote()
+        {
+
+        }
+    }
 }
