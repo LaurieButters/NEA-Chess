@@ -6,13 +6,21 @@ using System.Threading.Tasks;
 
 namespace NEA_Chess_Class_Libary
 {
-    public enum Row { A,B,C,D,E,F,G,H}
+    
+
     public class Square
     {
         private Row row;
         private int column;
         private bool isWhite;
         private Piece piece;
+        public Square(Row row,int column,bool isWhite)
+        {
+            this.row = row;
+            this.column = column;
+            this.isWhite = isWhite;
+            this.piece = null;
+        }
 
         public void Reset()
         {
