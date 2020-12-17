@@ -9,44 +9,40 @@ namespace NEA_Chess_Class_Libary
     public enum Row { A, B, C, D, E, F, G, H }
     public class Board
     {
-        Square[] board;
-        public void CheckSquareAtLocation()
-        {
-
-        }
+        private Square[] board;
 
         public Board()
         {
             int counter = 0;
             bool isWhite = false; 
             Row row;
-            for (int row = 0;row < 8; row++)
+            for (int i = 0;i < 8; row++)
             {
-                if (row == 0)
+                if (i == 0)
                 {
                     row = Row.A;
                 }
-                else if (row == 1)
+                else if (i == 1)
                 {
                     row = Row.B;
                 }
-                else if (row == 2)
+                else if (i == 2)
                 {
                     row = Row.C;
                 }
-                else if (row == 3)
+                else if (i == 3)
                 {
                     row = Row.D;
                 }
-                else if (row == 4)
+                else if (i == 4)
                 {
                     row = Row.E;
                 }
-                else if (row == 5)
+                else if (i == 5)
                 {
                     row = Row.F;
                 }
-                else if (row == 6)
+                else if (i == 6)
                 {
                     row = Row.G;
                 }
@@ -66,7 +62,7 @@ namespace NEA_Chess_Class_Libary
 
         public void Reset()
         {
-
+            
         }
     }
 }

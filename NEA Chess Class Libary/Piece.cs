@@ -9,7 +9,6 @@ namespace NEA_Chess_Class_Libary
     public abstract class Piece
     {
         private bool isWhite;
-        private bool isCaptured;
         private bool isPinned;
 
         public virtual void Move()
@@ -20,18 +19,11 @@ namespace NEA_Chess_Class_Libary
         {
 
         }
-        public virtual void VaildMoves()
+        public virtual Square[] VaildMoves()
         {
 
         }
-        public virtual bool CanBeCaptured()
-        {
 
-        }
-        public virtual bool CheckForCheck()
-        {
-
-        }
         public virtual bool IsPinned()
         {
 
@@ -42,11 +34,11 @@ namespace NEA_Chess_Class_Libary
     {
         private bool hasMoved;
 
-        public void Castle()
+        public void Castle(Piece rook)
         {
 
         }
-        public bool CheckCastleIsValid()
+        public bool CheckCastleIsValid(Piece rook)
         {
 
         }
@@ -58,6 +50,7 @@ namespace NEA_Chess_Class_Libary
     }
     public class Pawn : Piece
     {
+        private bool hasMoved;
         private Square skippedSquare;
 
         public bool CheckForEnPassent()

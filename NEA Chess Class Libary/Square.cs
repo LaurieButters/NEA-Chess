@@ -10,6 +10,7 @@ namespace NEA_Chess_Class_Libary
 
     public class Square
     {
+        private string name;
         private Row row;
         private int column;
         private bool isWhite;
@@ -21,11 +22,34 @@ namespace NEA_Chess_Class_Libary
             this.column = column;
             this.isWhite = isWhite;
             this.piece = null;
+            name = row.ToString() + column.ToString();
         }
 
-        public void Reset()
+        public void Occupy(Piece p)
+        {
+            piece = p;
+        }
+        public void UnOccupy()
+        {
+            piece = null;
+        }
+
+        public bool GetOccupiedStatus()
+        {
+            if (piece == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        public bool CanBeCaptured()
         {
 
         }
+
     }
 }
